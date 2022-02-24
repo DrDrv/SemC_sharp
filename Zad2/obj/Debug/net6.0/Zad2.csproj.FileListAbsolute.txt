@@ -1,0 +1,15 @@
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/bin/Debug/net6.0/Zad2
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/bin/Debug/net6.0/Zad2.deps.json
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/bin/Debug/net6.0/Zad2.runtimeconfig.json
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/bin/Debug/net6.0/Zad2.dll
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/bin/Debug/net6.0/Zad2.pdb
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.csproj.AssemblyReference.cache
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.AssemblyInfoInputs.cache
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.AssemblyInfo.cs
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.csproj.CoreCompileInputs.cache
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.dll
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/refint/Zad2.dll
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.pdb
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/Zad2.genruntimeconfig.cache
+/Users/administrator/Student/Введение в программирование/DZ/Zad2/obj/Debug/net6.0/ref/Zad2.dll
