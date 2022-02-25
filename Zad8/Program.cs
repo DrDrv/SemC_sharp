@@ -6,8 +6,8 @@ namespace Massive
     {
         static void Main()
         {
-            Console.Write("Введите число: ");
-            double a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Введите целое число: ");
+            int a = Convert.ToInt32(Console.ReadLine());
             if (a > 1 ) 
             {
                 Console.Write("Числовая последовательность четных чисел: ");
