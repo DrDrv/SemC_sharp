@@ -3,7 +3,7 @@ Console.WriteLine("Разворачиваем числа и находим тр�
 Random rand = new Random();
 for (int i = 1; i <= 6; i++)
 {
-    int number = rand.Next(10, 100000);
+    int number = rand.Next(1, 1000000);
     Console.WriteLine("Исходное число - " + number + " --Математически--> " + Mmetod(number));
     Console.WriteLine("Исходное число - " + number + " --   Текстом   --> " + Smetod(Convert.ToString(number),0));
     Console.WriteLine("Третье число числовой последовательности : " + Smetod(Convert.ToString(number),1));
@@ -36,7 +36,10 @@ string Smetod(string s, int d)
     if (d==0) 
     {return (t);}
     else if (d==1) // Выводим третье число из числовой последовательности
-    {   return (Convert.ToString(arr[2]));}
+    {   
+        if (s.Length<3){ return("Третьей цифры нет");} 
+        else {return (Convert.ToString(arr[2]));}
+    }
     else return("Error");
 }
 
