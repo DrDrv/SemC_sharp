@@ -7,6 +7,8 @@ for (int i = 1; i <= 6; i++)
     Console.WriteLine("Исходное число - " + number + " --Математически--> " + Mmetod(number));
     Console.WriteLine("Исходное число - " + number + " --   Текстом   --> " + Smetod(Convert.ToString(number),0));
     Console.WriteLine("Третье число числовой последовательности : " + Smetod(Convert.ToString(number),1));
+    int j = Convert.ToInt32(Smetod(Convert.ToString(number),1));
+    Console.WriteLine("День недели - " + j + "     " + Dmetod(j));
     Console.WriteLine("----------------------------");
 }
 // Метод математический универсальный - можно разворачивать любые целые положительные числа =)))
@@ -42,5 +44,14 @@ string Smetod(string s, int d)
     }
     else return("Error");
 }
-
+string Dmetod(int v)
+{
+    if ((v < 1) | (v > 7)) v=0;
+    string[] darr = {"Этот день недели вне времени","Понедельник","Вторник","Среда","Четверг","Пятница","Суббота","Воскресенье"};
+    if (v>5)
+    {
+        darr[v] += " - Выходной!";
+    }
+    return (darr[v]);
+}
 
