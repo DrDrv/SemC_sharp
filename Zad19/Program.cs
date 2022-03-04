@@ -1,5 +1,6 @@
 ﻿// Задача 19 - Число 5значное - палиндром ?
 Console.WriteLine("-=Палиндром - симметричное число=-");
+Console.WriteLine(" ");
 Random rnd = new Random();
 //Console.WriteLine("Метод-M тестовое число " + 12321 + Mmetod(12321) + " является палиндромом");
 //Console.WriteLine("Метод-S тестовое число " + 65856 + Smetod(Convert.ToString(65856)) + " является палиндромом");
