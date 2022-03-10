@@ -20,7 +20,7 @@ for (int i = 1; i < 4; i++)
 }
 //Отсортируем массив координат по дальности точек t_c - самая дальняя 
 //и присвоим точкам их значения растояния от начальной точки
-double rast_0a = 0, rast_0b = 0, rast_0c = 0, rast_ab = 0, rast_ac = 0, rast_bc = 0, rast_k = 0 ;
+double rast_0a = 0, rast_0b = 0, rast_0c = 0, rast_ab = 0, rast_ac = 0, rast_bc = 0, rast_k = 0;
 int t_a = 1, t_b = 1, t_c = 1;
 for (int i = 1; i < 4; i++)
 {
