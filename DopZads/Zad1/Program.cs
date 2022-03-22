@@ -53,7 +53,7 @@ for (int k = 1; k < kol_n - 2; k++)
     double min_rast = P_way(rast_0c+rast_0a, rast_bc+rast_0b, rast_ab);
     if (P_way(rast_0a, rast_ab, rast_bc) < min_rast )
     {
-
+        min_rast = P_way(rast_0a, rast_ab, rast_bc);
     }
 
 }
