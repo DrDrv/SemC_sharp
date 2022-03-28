@@ -33,7 +33,7 @@ for (int k = 1; k < kol_n - 1; k++)
 int t_n = 0;
 
 // Здесь будет цикличность для N точек
-double rast_0a = 0, rast_0b = 0, rast_0c = 0, rast_ab = 0, rast_ac = 0, rast_bc = 0, rast_k = 0;
+double rast_0a = 0, rast_0b = 0, rast_0c = 0, rast_ab = 0, rast_ac = 0, rast_bc = 0;
 for (int k = 1; k < kol_n - 2; k++)
 {
     rast_0a = Rast_t2t(t_n,k);

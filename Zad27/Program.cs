@@ -6,8 +6,8 @@ Console.WriteLine("Число A = " + chisA + "\t Сумма цифр в чис�
 
 int Sumch (int a)
 {
-    int len = Convert.ToInt32(Convert.ToString(a).Length), res = 0;
-    for (int i = 0; i < len; i++)
+    int res = 0;
+    while (a > 1)
     {
         res = res + a%10;
         a = a/10;
