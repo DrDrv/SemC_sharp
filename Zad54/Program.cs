@@ -16,7 +16,7 @@ SortStrArr(); // Сортировка строк по убыванию
 void SortStrArr() // Решение задачи 54
 {
     int tempval = 0; 
-    int[] summstr = {rangmass * cols, 0, 0};
+    int[] summstr = {rangmass * cols, 0, 0}; // Назначаем максимальное значение, если все значения, в нашем случае, строки будут равны по 49
     Console.WriteLine("+= Сортировка строк по убыванию =+");
     for (int j=0; j < rows; j++)
     {

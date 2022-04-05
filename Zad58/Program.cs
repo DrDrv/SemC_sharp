@@ -1,52 +1,34 @@
 ﻿// Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 Random rnd = new Random();
-int rowsa = rnd.Next(2,7), rowsb = rnd.Next(2,7);
-int colsa = rnd.Next(2,7), colsb = rnd.Next(2,7);
-int rangmass = 10;
+int rowsa = rnd.Next(2,7), colsa = rnd.Next(2,7);
+int rowsb = colsa, colsb = rnd.Next(2,7); //Произведение двух матриц АВ имеет смысл только в том случае, когда число столбцов матрицы А совпадает с числом строк матрицы В .
+int rangmass = 6;
 int[,] arraya = new int[rowsa,colsa]; 
 int[,] arrayb = new int[rowsb,colsb];
-
+int[,] arrayc = new int[rowsa,colsb]; //В произведении матриц АВ число строк равно числу строк матрицы А , а число столбцов равно числу столбцов матрицы В
 FillArr(arraya, rowsa, colsa);
 PrintArr(arraya, rowsa, colsa);
 FillArr(arrayb, rowsb, colsb);
 PrintArr(arrayb, rowsb, colsb);
-/*SortStrArr(); // Сортировка строк по убыванию
+MultiMatrix();
+PrintArr(arrayc, rowsa, colsb);
 
-
-void SortStrArr() // Решение задачи 54
+void MultiMatrix() // Решение задачи 58
 {
-    int tempval = 0; 
-    int[] summstr = {rangmass * cols, 0, 0};
-    Console.WriteLine("+= Сортировка строк по убыванию =+");
-    for (int j=0; j < rows; j++)
+    Console.WriteLine("+= Перемножение матриц =+");
+    for (int s = 0; s < rowsa; s++)     
     {
-        for (int i=0; i < cols; i++)
+        for (int c = 0; c < colsb; c++)
         {
-            for (int k=0; k < cols-1; k++)
+            for (int f = 0; f < rowsa; f++)
             {
-                if (array[j,k]<array[j,k+1])
-                {
-                    tempval = array[j,k];
-                    array[j,k] = array[j,k+1];
-                    array[j,k+1] = tempval;
-                }
+                arrayc[s,c] += arraya[s,f] * arrayb[f,c];
             }
-            summstr[2] +=array[j,i]; // Решение задачи 56
+            
         }
-        if (summstr[0] > summstr[2])
-        {
-            summstr[1] = j;
-            summstr[0] = summstr[2];
-        } 
-        summstr[2] = 0;
     } 
-    PrintArr(); // Вывод результата по задаче 54
-    Console.WriteLine();
-    Console.WriteLine($"Строка {summstr[1]+1} является с наименьшей суммой элементов равной {summstr[0]}"); 
-    // конец решения задачи 56
-    Console.WriteLine();
 }
-*/
+
 void FillArr(int[,] arr, int row, int col)
 {
     Console.WriteLine("+= Заполняем массив =+");
