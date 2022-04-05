@@ -1,22 +1,21 @@
 ﻿// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит 
 //  по убыванию элементы каждой строки двумерного массива.
-// Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая 
-//  будет находить строку с наименьшей суммой элементов.
+
+
 Random rnd = new Random();
 int rows = rnd.Next(2,5);
 int cols = rnd.Next(2,15);
-int rangmass = 50;
 int[,] array = new int[rows,cols]; 
 
 FillArr();
 PrintArr();
-SortStrArr(); // Сортировка строк по убыванию
+SortStrArr();
+PrintArr();
+SummStrArr();
 
-
-void SortStrArr() // Решение задачи 54
+void SortStrArr()
 {
-    int tempval = 0; 
-    int[] summstr = {rangmass * cols, 0, 0};
+    int tempval = 0;
     Console.WriteLine("+= Сортировка строк по убыванию =+");
     for (int j=0; j < rows; j++)
     {
@@ -31,22 +30,10 @@ void SortStrArr() // Решение задачи 54
                     array[j,k+1] = tempval;
                 }
             }
-            summstr[2] +=array[j,i]; // Решение задачи 56
-        }
-        if (summstr[0] > summstr[2])
-        {
-            summstr[1] = j;
-            summstr[0] = summstr[2];
-        } 
-        summstr[2] = 0;
-    } 
-    PrintArr(); // Вывод результата по задаче 54
-    Console.WriteLine();
-    Console.WriteLine($"Строка {summstr[1]+1} является с наименьшей суммой элементов равной {summstr[0]}"); 
-    // конец решения задачи 56
-    Console.WriteLine();
-}
 
+        }
+    }    
+}
 void FillArr()
 {
     Console.WriteLine("+= Заполняем массив =+");
@@ -54,7 +41,7 @@ void FillArr()
     {
         for (int j=0; j < cols; j++)
             {
-                array[i,j] = rnd.Next(rangmass);
+                array[i,j] = rnd.Next(50);
             }
     }
 }
