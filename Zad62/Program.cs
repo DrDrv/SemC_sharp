@@ -35,7 +35,7 @@ void FillArr(int[,] arr, int row, int col)
         }
         if ( flag == 2)
         {
-            for (int j = jk; j >= cols - col + k; j--)
+            for (int j = jk; j > k-1; j--)
             {
                 arr[ik,j] = znachelmatrix++;
                 jk = j;
@@ -45,7 +45,7 @@ void FillArr(int[,] arr, int row, int col)
         }
         if ( flag == 3)
         {
-            for (int i = ik; i > rows-row + k; i--)
+            for (int i = ik; i > k; i--)
             {
                 arr[i,jk] = znachelmatrix++;
                 ik = i;
