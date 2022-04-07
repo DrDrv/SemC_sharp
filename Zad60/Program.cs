@@ -1,7 +1,7 @@
 ﻿// Задача 60: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая построчно выведет элементы и их индексы.
 Random rnd = new Random();
-int rows = rnd.Next(3,7), cols = rnd.Next(3,7), deps = rnd.Next(3,7);
-int rangmassmin = 100, rangmassmax = 1000; // Максимальное и минимальное значение элементов массива
+int rows = rnd.Next(2,4), cols = rnd.Next(2,4), deps = rnd.Next(2,4);
+int rangmassmin = 10, rangmassmax = 100; // Максимальное и минимальное значение элементов массива
 int[,,] array = new int[rows, cols, deps]; 
 // Начало решения Задачи
 int delta = (rangmassmax - rangmassmin)/rows/cols/deps;  // берем и расчитываем дельту в интервале значений массива, для уникальности значений 
