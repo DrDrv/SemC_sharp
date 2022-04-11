@@ -20,7 +20,7 @@ void MultiMatrix() // Решение задачи 58
     {
         for (int c = 0; c < colsb; c++)
         {
-            for (int f = 0; f < rowsa; f++)
+            for (int f = 0; f < rowsb; f++)
             {
                 arrayc[s,c] += arraya[s,f] * arrayb[f,c];
             }
