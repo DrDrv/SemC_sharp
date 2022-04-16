@@ -50,7 +50,7 @@ class Programm
         //3. Дано натуральное число n > 1. Вывести все простые множители данного числа.
         numberA = rnd.Next(10,1000);
         Console.WriteLine($"Входное число - {numberA}");
-        Console.WriteLine($"Простые множители числа - ");
+        Console.Write($"Простые множители числа - ");
         SimpleMulti(numberA, numberA);
         Console.WriteLine();
 
