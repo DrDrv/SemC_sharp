@@ -53,7 +53,7 @@ void Matsumm(int num,int len)
 void VisokosnyGod(int y, int i = 1)
 {
     string visokos = "не високосный";
-    if (i == 10) return;
+    if (i == 11) return;
     if (y%4 == 0) 
     {
         if (y%100 == 0)
