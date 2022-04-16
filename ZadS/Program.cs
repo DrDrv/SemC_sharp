@@ -45,6 +45,34 @@ class Programm
             PrintList(num-1,nownumber,kolvo);
             return;
         }
+        
+        Console.WriteLine($"+= Решение задачи 3 =+");
+        //3. Дано натуральное число n > 1. Вывести все простые множители данного числа.
+        numberA = rnd.Next(10,1000);
+        Console.WriteLine($"Входное число - {numberA}");
+        Console.WriteLine($"Простые множители числа - ");
+        SimpleMulti(numberA, numberA);
+        Console.WriteLine();
 
+        void SimpleMulti(int num, int dev )
+        {
+            if (dev == 1) return;
+            if (num%dev == 0 & num/dev != 1) 
+                {
+                    if (Simlenum(dev) == 1) Console.Write($"{dev} \t");
+                }
+            SimpleMulti(num, dev - 1);
+        }
+        
+        int Simlenum (int num)
+        {
+            if (num < 2) return(0); 
+            for (long i = 2; i * i <= num; i++)
+                {
+                    if (num % i == 0) 
+                    return(0);
+                }
+            return(1);
+        }
     }
 }
