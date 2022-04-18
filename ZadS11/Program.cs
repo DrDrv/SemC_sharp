@@ -4,7 +4,7 @@ int n = 0;
 int m = 10;
 int numberN = 5;
 int lenarr = 10;
-int year = 2022;
+int year = 1903;
 Console.WriteLine($"Входные данные: n = {n}, m = {m}, длина массива = {lenarr}, чистло сравнения - {numberN},  год - {year}");
 int[] arr = new int[lenarr];
 FillArr(n, m, lenarr);
